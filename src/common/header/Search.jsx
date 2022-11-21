@@ -6,7 +6,7 @@ const Search = ({ CartItem }) => {
                                                                       // fixed Header
   window.addEventListener("scroll", function () {
     const search = document.querySelector(".search")
-    search.classList.toggle("active", window.scrollY > 100)
+    search.classList.toggle("active", window.scrollY > 70)
   })
 
   return (
@@ -24,7 +24,10 @@ const Search = ({ CartItem }) => {
           </div>
 
           <div className='icon f_flex width'>
-            <i className='fa fa-user icon-circle'></i>
+            <Link to='/Signin'>
+              <i className='fa fa-user icon-circle'></i>
+            </Link>
+            
             <div className='cart'>
               <Link to='/cart'>
                 <i className='fa fa-shopping-bag icon-circle'></i>
